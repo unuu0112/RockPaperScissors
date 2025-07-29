@@ -28,9 +28,11 @@ function solve(playerTurn) {
         default:
             break;
     }
+
     console.log(`The computer choose ${computerTurn}`);
 
     if((playerTurn == rock && computerTurn === scissors) || (playerTurn == scissors && computerTurn === paper) || (playerTurn == paper && computerTurn === rock)){
+        
         console.log('You win!');
     } else if((computerTurn == rock && playerTurn === scissors) || (computerTurn == scissors && playerTurn === paper) || (computerTurn == paper && playerTurn === rock)) {
         console.log('You lose!');
